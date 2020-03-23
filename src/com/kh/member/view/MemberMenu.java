@@ -48,9 +48,9 @@ public class MemberMenu {
 			int num = sc.nextInt();
 			
 			switch(num) {
-			case 1 : 
-			case 2 :
-			case 3 : 
+			case 1 : break;
+			case 2 : break;
+			case 3 : break;
 			}
 			
 			
