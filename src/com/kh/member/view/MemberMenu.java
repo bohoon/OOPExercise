@@ -19,7 +19,7 @@ public class MemberMenu {
 			System.out.println("5. 회원 정보 출력");
 			System.out.println("9. 종료");
 			System.out.println("=================================");
-			System.out.println("메뉴 번호를 입력하세요 : ");
+			System.out.print("메뉴 번호를 입력하세요 : ");
 			int num = sc.nextInt();
 			
 			switch(num) {
@@ -45,7 +45,7 @@ public class MemberMenu {
 			System.out.println("3. 이메일로 검색하기");
 			System.out.println("9. 메인메뉴로");
 			System.out.println("=================================");
-			System.out.println("메뉴 번호를 입력하세요 : ");
+			System.out.print("메뉴 번호를 입력하세요 : ");
 			int num = sc.nextInt();
 			switch(num) {
 			case 1 : break;
@@ -66,7 +66,7 @@ public class MemberMenu {
 			System.out.println("3. 이메일 수정하기");
 			System.out.println("9. 메인메뉴로");
 			System.out.println("================================");
-			System.out.println("메뉴 번호를 입력하세요 : ");
+			System.out.print("메뉴 번호를 입력하세요 : ");
 			int num = sc.nextInt();
 			
 			switch(num) {
@@ -87,7 +87,7 @@ public class MemberMenu {
 			System.out.println("2. 전체 회원 삭제");
 			System.out.println("9. 메인메뉴로");
 			System.out.println("================================");
-			System.out.println("메뉴 번호를 입력하세요 : ");
+			System.out.print("메뉴 번호를 입력하세요 : ");
 			int num = sc.nextInt();
 			
 			switch(num) {
