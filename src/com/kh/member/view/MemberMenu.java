@@ -8,6 +8,7 @@ public class MemberMenu {
 	private Scanner sc = new Scanner(System.in);
 	private MemberManager mm = new MemberManager();
 
+	MemberMenu menu = new MemberMenu();
 	public void mainMenu() {
 		do {
 			System.out.println("=========== 회원 관리 메뉴 ===========");
@@ -47,10 +48,10 @@ public class MemberMenu {
 			System.out.println("메뉴 번호를 입력하세요 : ");
 			int num = sc.nextInt();
 			switch(num) {
-			case 1 : 
-			case 2 : 
-			case 3 : 
-			case 9 : 
+			case 1 : break;
+			case 2 : break;
+			case 3 : break;
+			case 9 : System.out.println("메인메뉴로 이동합니다.");menu.mainMenu();return;
 			}
 			
 		}while(true);
@@ -72,7 +73,7 @@ public class MemberMenu {
 			case 1 : break;
 			case 2 : break;
 			case 3 : break;
-			case 9 : break;
+			case 9 : System.out.println("메인메뉴로 이동합니다.");menu.mainMenu();return;
 			}
 			
 			
@@ -92,7 +93,7 @@ public class MemberMenu {
 			switch(num) {
 			case 1 : break;
 			case 2 : break;
-			case 9 : break;
+			case 9 : System.out.println("메인메뉴로 이동합니다.");menu.mainMenu();return;
 			}
 		}while(true);
 		
