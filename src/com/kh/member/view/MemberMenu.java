@@ -22,11 +22,11 @@ public class MemberMenu {
 			int num = sc.nextInt();
 			
 			switch(num) {
-			case 1 : 
-			case 2 : 
-			case 3 : 
-			case 4 : 
-			case 5 : 
+			case 1 : break;
+			case 2 : break;
+			case 3 : break;
+			case 4 : break;
+			case 5 : break;
 			}
 			
 			if(num == 9) {
@@ -35,6 +35,27 @@ public class MemberMenu {
 			}
 		}while(true);
 	}
+	
+	public void searchMemberMenu() {
+		do {
+			System.out.println("=========== 회원 정보 검색 ===========");
+			System.out.println("1. 아이디로 검색하기");
+			System.out.println("2. 이름으로 검색하기");
+			System.out.println("3. 이메일로 검색하기");
+			System.out.println("9. 메인메뉴로");
+			System.out.println("=================================");
+			System.out.println("메뉴 번호를 입력하세요 : ");
+			int num = sc.nextInt();
+			switch(num) {
+			case 1 : 
+			case 2 : 
+			case 3 : 
+			case 9 : 
+			}
+			
+		}while(true);
+	}
+	
 	
 	public void updateMemberMenu() {
 		do {
@@ -51,9 +72,29 @@ public class MemberMenu {
 			case 1 : break;
 			case 2 : break;
 			case 3 : break;
+			case 9 : break;
 			}
 			
 			
 		}while(true);
+	}
+	
+	public void deleteMemberMenu() {
+		do {
+			System.out.println("=========== 회원 정보 삭제 ===========");
+			System.out.println("1. 회원 삭제");
+			System.out.println("2. 전체 회원 삭제");
+			System.out.println("9. 메인메뉴로");
+			System.out.println("================================");
+			System.out.println("메뉴 번호를 입력하세요 : ");
+			int num = sc.nextInt();
+			
+			switch(num) {
+			case 1 : break;
+			case 2 : break;
+			case 9 : break;
+			}
+		}while(true);
+		
 	}
 }
