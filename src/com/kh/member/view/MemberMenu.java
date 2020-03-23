@@ -33,6 +33,25 @@ public class MemberMenu {
 				System.out.println("프로그램을 종료합니다.");
 				break;
 			}
+		}while(true);
+	}
+	
+	public void updateMemberMenu() {
+		do {
+			System.out.println("=========== 회원 정보 수정 ===========");
+			System.out.println("1. 비밀번호 수정하기");
+			System.out.println("2. 이름 수정하기");
+			System.out.println("3. 이메일 수정하기");
+			System.out.println("9. 메인메뉴로");
+			System.out.println("================================");
+			System.out.println("메뉴 번호를 입력하세요 : ");
+			int num = sc.nextInt();
+			
+			switch(num) {
+			case 1 : 
+			case 2 :
+			case 3 : 
+			}
 			
 			
 		}while(true);
