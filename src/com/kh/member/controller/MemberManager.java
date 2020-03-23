@@ -56,4 +56,34 @@ public class MemberManager {
 			}
 		}
 	}
+	
+	public void searchEmail() {
+		System.out.println("검색할 이메일을 입력하세요  : ");
+		String emil = sc.next();
+		
+		for(int i = 0; i < m.length; i++) {
+			if(m[i].getEmail() == emil) {
+				System.out.println(m[i]);
+			}else if(i == m.length-1) {
+				System.out.println("검색한 회원 정보가 존재하지 않습니다.");return;
+			}
+		}
+	}
+	
+	public void updatePwd() {
+		System.out.println("수정할 회원의 아이디를 입력하세요  : ");
+		String id = sc.next();
+		
+		for(int i = 0; i < m.length; i++) {
+			if(m[i].getUserId() == id) {
+				System.out.print("변경할 비밀번호를 입력 하세요 :");
+				String pwd = sc.next();
+				m[i].setUserPwd(pwd);
+				System.out.println("패스워드 수정이 완료되었습니다.");
+				return;
+			}else if(i == m.length-1) {
+				System.out.println("수정할 회원이 존재하지 않습니다.");return;
+			}
+		}
+	}
 }

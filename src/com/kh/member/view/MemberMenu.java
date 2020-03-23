@@ -23,7 +23,7 @@ public class MemberMenu {
 			int num = sc.nextInt();
 			
 			switch(num) {
-			case 1 : break;
+			case 1 : mm.insertMember();break;
 			case 2 : break;
 			case 3 : break;
 			case 4 : break;
