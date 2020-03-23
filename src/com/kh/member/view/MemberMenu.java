@@ -8,8 +8,9 @@ public class MemberMenu {
 	private Scanner sc = new Scanner(System.in);
 	private MemberManager mm = new MemberManager();
 
-	MemberMenu menu = new MemberMenu();
+	
 	public void mainMenu() {
+		MemberMenu menu = new MemberMenu();
 		do {
 			System.out.println("=========== 회원 관리 메뉴 ===========");
 			System.out.println("1. 신규 회원 등록");
@@ -38,6 +39,7 @@ public class MemberMenu {
 	}
 	
 	public void searchMemberMenu() {
+		MemberMenu menu = new MemberMenu();
 		do {
 			System.out.println("=========== 회원 정보 검색 ===========");
 			System.out.println("1. 아이디로 검색하기");
@@ -59,6 +61,7 @@ public class MemberMenu {
 	
 	
 	public void updateMemberMenu() {
+		MemberMenu menu = new MemberMenu();
 		do {
 			System.out.println("=========== 회원 정보 수정 ===========");
 			System.out.println("1. 비밀번호 수정하기");
@@ -81,6 +84,7 @@ public class MemberMenu {
 	}
 	
 	public void deleteMemberMenu() {
+		MemberMenu menu = new MemberMenu();
 		do {
 			System.out.println("=========== 회원 정보 삭제 ===========");
 			System.out.println("1. 회원 삭제");
