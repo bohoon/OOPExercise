@@ -24,10 +24,10 @@ public class MemberMenu {
 			
 			switch(num) {
 			case 1 : mm.insertMember();break;
-			case 2 : break;
-			case 3 : break;
-			case 4 : break;
-			case 5 : break;
+			case 2 : menu.searchMemberMenu();break;
+			case 3 : menu.updateMemberMenu();break;
+			case 4 : menu.deleteMemberMenu();break;
+			case 5 : mm.printAllMember();break;
 			}
 			
 			if(num == 9) {
@@ -48,9 +48,9 @@ public class MemberMenu {
 			System.out.print("메뉴 번호를 입력하세요 : ");
 			int num = sc.nextInt();
 			switch(num) {
-			case 1 : break;
-			case 2 : break;
-			case 3 : break;
+			case 1 : mm.searchId();break;
+			case 2 : mm.searchName();break;
+			case 3 : mm.searchEmail();break;
 			case 9 : System.out.println("메인메뉴로 이동합니다.");menu.mainMenu();return;
 			}
 			
@@ -70,9 +70,9 @@ public class MemberMenu {
 			int num = sc.nextInt();
 			
 			switch(num) {
-			case 1 : break;
-			case 2 : break;
-			case 3 : break;
+			case 1 : mm.updatePwd();break;
+			case 2 : mm.updateName();break;
+			case 3 : mm.updateEmail();break;
 			case 9 : System.out.println("메인메뉴로 이동합니다.");menu.mainMenu();return;
 			}
 			
@@ -91,8 +91,8 @@ public class MemberMenu {
 			int num = sc.nextInt();
 			
 			switch(num) {
-			case 1 : break;
-			case 2 : break;
+			case 1 : mm.deleteOne();break;
+			case 2 : mm.deleteAll();break;
 			case 9 : System.out.println("메인메뉴로 이동합니다.");menu.mainMenu();return;
 			}
 		}while(true);
