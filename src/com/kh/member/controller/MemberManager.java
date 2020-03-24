@@ -26,7 +26,7 @@ public class MemberManager {
 		System.out.print("¿Ã∏ﬁ¿œ : ");
 		String email = sc.next();
 		
-		m[i] = new Member(id,pwd,name,age,gender,email);
+		m[ctn] = new Member(id,pwd,name,age,gender,email);
 		ctn++;
 		
 		i++;
