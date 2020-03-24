@@ -11,7 +11,8 @@ public class MemberManager {
 	public MemberManager() {}
 	
 	public void insertMember() {
-		for(int i = 0; i < m.length; i++) {
+		int i = 0;
+		while(i < m.length) {
 		System.out.print("아이디 : ");
 		String id = sc.next();
 		System.out.print("패스워드 : ");
@@ -27,8 +28,12 @@ public class MemberManager {
 		
 		m[i] = new Member(id,pwd,name,age,gender,email);
 		ctn++;
-		}
+		
+		i++;
 		System.out.println("입력이 완료되었습니다. 메인메뉴로 돌아갑니다.");
+		break;
+		}
+
 	}
 	
 	public void searchId() {
