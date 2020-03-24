@@ -40,8 +40,8 @@ public class MemberManager {
 		System.out.println("검색할 아이디를 입력하세요  : ");
 		String Id = sc.next();
 		
-		for(int i = 0; i < m.length; i++) {
-			if(m[i].getUserId()==Id) {
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getUserId().equals(Id)) {
 				System.out.println(m[i]);
 			}else if(i == m.length-1) {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");return;
@@ -53,8 +53,8 @@ public class MemberManager {
 		System.out.println("검색할 이름을 입력하세요 : ");
 		String Name = sc.next();
 		
-		for(int i = 0; i < m.length; i++) {
-			if(m[i].getUserName()==Name) {
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getUserName().equals(Name)) {
 				System.out.println(m[i]);
 			}else if(i == m.length-1) {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");return;
@@ -66,8 +66,8 @@ public class MemberManager {
 		System.out.println("검색할 이메일을 입력하세요  : ");
 		String emil = sc.next();
 		
-		for(int i = 0; i < m.length; i++) {
-			if(m[i].getEmail() == emil) {
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getEmail().equals(emil)) {
 				System.out.println(m[i]);
 			}else if(i == m.length-1) {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");return;
@@ -79,8 +79,8 @@ public class MemberManager {
 		System.out.println("수정할 회원의 아이디를 입력하세요  : ");
 		String id = sc.next();
 		
-		for(int i = 0; i < m.length; i++) {
-			if(m[i].getUserId() == id) {
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getUserId().equals(id)) {
 				System.out.print("변경할 비밀번호를 입력 하세요 :");
 				String pwd = sc.next();
 				m[i].setUserPwd(pwd);
@@ -113,9 +113,9 @@ public class MemberManager {
 		System.out.println("수정할 아이디를 입력하세요 : ");
 		String id = sc.next();
 		
-		for(int i = 0; i < m.length; i++) {
-			if(m[i].getUserId() == id) {
-				System.out.print("변경할 이름을 입력 하세요  :");
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getUserId().equals(id)) {
+				System.out.print("변경할 이메일을 입력 하세요  :");
 				String email = sc.next();
 				m[i].setEmail(email);
 				System.out.println("패스워드 수정이 완료되었습니다.");
