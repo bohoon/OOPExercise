@@ -42,7 +42,7 @@ public class MemberManager {
 		
 		for(int i = 0; i < ctn; i++) {
 			if(m[i].getUserId().equals(Id)) {
-				System.out.println(m[i]);
+				m[i].printOne(m);
 			}else if(i == m.length-1) {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");return;
 			}
@@ -139,6 +139,12 @@ public class MemberManager {
 	}
 	
 	public void pringOne(Member m) {
+		System.out.println(m.getUserId());
+		System.out.println(m.getUserPwd());
+		System.out.println(m.getUserName());
+		System.out.println(m.getAge());
+		System.out.println(m.getGender());
+		System.out.println(m.getEmail());
 		
 	}
 }
